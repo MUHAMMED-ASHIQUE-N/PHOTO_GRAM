@@ -1,11 +1,10 @@
 import  { useState, type FC } from 'react';
 import { Camera, Upload, Share2, Heart, Zap, Shield, Star, Play, Download, ArrowRight, Menu, X } from 'lucide-react';
 import {  useUserAuth} from "../../context/userAuthContext";
-import { useNavigate } from 'react-router-dom';
 
 const Home: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isHover , setIsHover]= useState(null)
+    const [isHover , setIsHover]= useState<number | null>(null)
 
   // Sample gallery images for showcase
   const showcaseImages = [
@@ -18,7 +17,6 @@ const Home: FC = () => {
   ];
 
   const {logOut} = useUserAuth()
-  const navigate = useNavigate()
 
   // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   //     e.preventDefault();

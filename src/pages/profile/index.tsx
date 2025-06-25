@@ -1,9 +1,7 @@
 import  React from 'react';
 
-interface IProfileProps {
-}
 
-const Profile: React.FC<IProfileProps> = (props) => {
+const Profile: React.FC = () => {
   return <div>Profile</div>;
 };
 

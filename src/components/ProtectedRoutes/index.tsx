@@ -3,10 +3,8 @@ import { Navigate, Outlet, useLocation } from 'react-router-dom';
     import {useAuthState} from "react-firebase-hooks/auth"
 import { getAuth } from 'firebase/auth';
 
-interface IProtectedRouteProps {
-}
 
-const ProtectedRoute: React.FC<IProtectedRouteProps> = (props) => {
+const ProtectedRoute: React.FC = () => {
  const auth = getAuth();
  const [user , loading]= useAuthState(auth);
 

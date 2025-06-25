@@ -1,9 +1,8 @@
 import React from 'react';
 
-interface ICreatePostProps {
-}
 
-const CreatePost: React.FunctionComponent<ICreatePostProps> = (props) => {
+
+const CreatePost: React.FC = () => {
   return <div>Create Post</div>;
 };
 

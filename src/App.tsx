@@ -4,10 +4,8 @@ import router from './Routes/routes';
 import { UserAuthProvider } from './context/userAuthContext';
 import { generateToken } from './firebase/firebaseConfig';
 
-interface IAppProps {
-}
 
-const App: React.FC<IAppProps> = (props) => {
+const App: React.FC = () => {
   useEffect(() => {
   
 generateToken();

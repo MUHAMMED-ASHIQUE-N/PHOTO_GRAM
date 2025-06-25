@@ -20,7 +20,7 @@ const initialValue: UserSignIn = {
   password: "",
 };
 
-const SignUp: React.FC<ISignUpProps> = () => {
+const SignUp: React.FC = () => {
   const { signUp,googleSignIn } = useUserAuth();
   const navigate = useNavigate();
   const [userInfo, setUserInfo] = useState<UserSignIn>(initialValue);

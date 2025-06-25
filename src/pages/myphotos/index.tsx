@@ -1,9 +1,7 @@
 import  React from 'react';
 
-interface IMyPhotosProps {
-}
 
-const MyPhotos: React.FC<IMyPhotosProps> = (props) => {
+const MyPhotos: React.FC = () => {
   return<>my Photos</> ;
 };
 
