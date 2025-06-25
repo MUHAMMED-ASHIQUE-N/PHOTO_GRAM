@@ -60,9 +60,9 @@ const Login: React.FC<ILoginProps> = () => {
   return (
    <div className="bg-slate-900 w-full h-screen">
   <div className="container mx-auto p-6 flex h-full">
-    <div className="flex justify-center items-center w-full">
+    <div className="flex flex-col md:flex-row justify-center items-center w-full">
       {/* Image collage on large screens */}
-      <div className="p-20 w-2/3 hidden lg:block">
+      <div className="md:p-20 md:w-2/3 w-full mb-10 md:mb-0">
         <div className="grid grid-cols-2 gap-1">
           <img
             src={image1}
