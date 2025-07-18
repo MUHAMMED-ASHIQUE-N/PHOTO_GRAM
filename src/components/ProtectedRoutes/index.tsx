@@ -7,13 +7,13 @@ import { getAuth } from 'firebase/auth';
 const ProtectedRoute: React.FC = () => {
  const auth = getAuth();
  const [user , loading]= useAuthState(auth);
+ const location = useLocation()
 
 
 
   if (loading) {
     return <div>Loding.....</div>
   }
-    const location = useLocation()
     return (
         user ? (<Outlet/>): (
             <Navigate to = "/login" state = {{ from: location }}/>
